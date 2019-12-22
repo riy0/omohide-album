@@ -1,10 +1,10 @@
 import React from "react";
 
-const About = () => {
+const About = props => {
   return (
     <div>
       <div className="container">
-        <h4 className="center">About</h4>
+        <h4 className="center">Contact</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           repudiandae repellat illo magni eligendi cupiditate voluptates eius

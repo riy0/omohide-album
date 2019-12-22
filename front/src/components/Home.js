@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import Calendar from "./Calendar";
 
 class Home extends Component {
   render() {
-    console.log(this.props);
     const { posts } = this.props;
     const postList = posts.length ? (
       posts.map(post => {
@@ -24,7 +24,9 @@ class Home extends Component {
     );
     return (
       <div className="container">
+        <Calendar />
         <h4 className="center">Home</h4>
+
         <p>{postList}</p>
       </div>
     );
